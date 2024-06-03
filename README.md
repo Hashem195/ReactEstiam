@@ -19,9 +19,12 @@ To get started with the project, follow these steps:
    git clone https://github.com/Hashem195/ReactEstiam.git
 2. **Navigate to the Project Directory**
 
-    ```npm install
+    ```sh
+    npm install
 3. **Install Dependencies**
-   ```npm install
+   ```sh
+   npm install
    or
-   ```yarn install
+   ```sh
+   yarn install
    
