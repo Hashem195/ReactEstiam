@@ -1,76 +1,90 @@
 import React from "react";
 import styled from "styled-components";
+import Logo from "./Logo";
+// Header and logo all ready to go for now
+// Need to add nav links and update the links
+// Need to check responsivity for the header after adding the new links
 const Header = () => {
   return (
     <Container>
-      <Title>Header</Title>
+      <Logo />
       <Nav>
-        <Nav>
-          <List>
-            <Link href="/">Home </Link>
-          </List>
-          <List>
-            <Link href="/About">About</Link>
-          </List>
-          <List>
-            <Link href="/contact">Contact</Link>
-          </List>
-        </Nav>
+        <List>
+          <NavItem>
+            <StyledLink href="/">Home</StyledLink>
+          </NavItem>
+          <Divider>||</Divider>
+          <NavItem>
+            <StyledLink href="/About">About</StyledLink>
+          </NavItem>
+          <Divider>||</Divider>
+          <NavItem>
+            <StyledLink href="/Contact">Contact</StyledLink>
+          </NavItem>
+        </List>
       </Nav>
     </Container>
   );
 };
+
 export default Header;
 
-const Title = styled.h1`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: 10px;
-  text-align: center;
-  color: black;
-
-  @media (min-width: 600px) {
-    font-size: 0.4em;
-  }
-
-  @media (min-width: 800px) {
-    font-size: 0.4em;
-  }
-
-  @media (min-width: 1000px) {
-    font-size: 1.5em;
-  }
-`;
 const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0;
+  padding: 0 1em;
   text-align: center;
   color: black;
-  background-color: gray;
+  background: #6e6e6e;
 
-  @media (min-width: 600px) {
-  }
-
-  @media (min-width: 800px) {
-  }
-
-  @media (min-width: 1000px) {
+  @media (max-width: 600px) {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
   }
 `;
+
 const Nav = styled.nav`
   display: flex;
   align-items: center;
-  margin: 0.2em;
 `;
+
 const List = styled.ul`
   display: flex;
   flex-direction: row;
   list-style: none;
+  padding: 0;
+  margin: 0;
 `;
-const Link = styled.a`
+
+const NavItem = styled.li`
+  margin: 0 0.5em;
+  font-weight: bold;
+`;
+
+const StyledLink = styled.a`
   text-decoration: none;
-  color: black;
+  color: white;
+  font-size: 1.2em;
+  padding: 0.5em;
+  transition: color 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    color: black;
+    font-weight: bold;
+    transform: scale(1.2);
+    box-shadow: 0 0 10px black;
+    border-radius: 0.2em;
+  }
+`;
+
+const Divider = styled.span`
+  margin: 0 0.5em;
+  color: white;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
