@@ -28,3 +28,4 @@ To get started with the project, follow these steps:
 **Or**
    ```sh
    yarn install
+4. ** start the Development Server**
