@@ -26,6 +26,7 @@ To get started with the project, follow these steps:
    npm install
 
    or
+   
    ```sh
    yarn install
    
