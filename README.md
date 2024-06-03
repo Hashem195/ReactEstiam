@@ -24,7 +24,9 @@ To get started with the project, follow these steps:
 3. **Install Dependencies**
    ```sh
    npm install
+   
    or
+   
    ```sh
    yarn install
    
