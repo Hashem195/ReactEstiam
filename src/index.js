@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Header from "./Comoposents/Header/Header";
 import Home from "./Comoposents/HomePage/Home";
+import Footer from "./Comoposents/Footer/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -12,6 +13,7 @@ root.render(
     <Header />
     <Home />
     <App />
+    <Footer />
   </React.StrictMode>
 );
 

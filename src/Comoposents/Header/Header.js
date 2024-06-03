@@ -62,16 +62,19 @@ const List = styled.ul`
 const NavItem = styled.li`
   margin: 0 0.5em;
   font-weight: bold;
+  color: white;
 `;
 
 const StyledLink = styled.a`
   text-decoration: none;
   color: white;
   font-size: 1.2em;
+  border-radius: 0.2em;
   padding: 0.5em;
   transition: color 0.3s ease, transform 0.3s ease;
 
   &:hover {
+    background-color: #bcfd4c;
     color: black;
     font-weight: bold;
     transform: scale(1.2);
@@ -82,8 +85,8 @@ const StyledLink = styled.a`
 
 const Divider = styled.span`
   margin: 0 0.5em;
-  color: white;
-
+  color: black;
+  font-weight: bold;
   @media (max-width: 600px) {
     display: none;
   }
