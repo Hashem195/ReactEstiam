@@ -37,6 +37,8 @@ const Container = styled.div`
   padding: 0 1em;
   text-align: center;
   color: black;
+  border-bottom: 1px solid #6e6e6e;
+  height: auto;
   background: #6e6e6e;
 
   @media (max-width: 600px) {
