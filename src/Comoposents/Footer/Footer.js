@@ -5,6 +5,12 @@ import styled, { keyframes } from "styled-components";
 // the links are not done yet
 // only AUTRES ARE FINISHED
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <Container>
       <ShapeDivider className="custom-shape-divider-top-1717455096">
@@ -30,7 +36,9 @@ const Footer = () => {
           <SectionItem>
             <li>Qui sommes-nous ?</li>
             <li>Notre équipe</li>
-            <li>Partenaires</li>
+            <Linker onClick={scrollToTop} style={{ cursor: "pointer" }}>
+              Partenaires
+            </Linker>
           </SectionItem>
         </Section>
         <Section>

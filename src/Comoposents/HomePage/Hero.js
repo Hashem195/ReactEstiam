@@ -26,9 +26,6 @@ const Hero = () => {
     <>
       <MainContainer>
         <ContainerSlider>
-          <SliderTitle>
-            Elderly people, living and aging among all generations
-          </SliderTitle>
           <ImageSlider slides={slides} />
         </ContainerSlider>
         <Partenariat />
@@ -65,19 +62,5 @@ const ContainerSlider = styled.div`
     margin-bottom: 0.3em;
   }
 `;
-const SliderTitle = styled.h1`
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.4em;
-  justify-content: start;
-  font-size: 1.5em;
-  font-weight: 700;
-  font-family: "Times New Roman", Times, serif;
 
-  @media (max-width: 600px) {
-    font-size: 1.3em;
-    margin-bottom: 0;
-    margin-top: 0.2em;
-  }
-`;
 export default Hero;
