@@ -13,6 +13,7 @@ const partners = [
 const Partenariat = () => {
   return (
     <GridContainer>
+      <GridHeader>Partenaires</GridHeader>
       {partners.map((partner, index) => (
         <GridItem
           key={index}
@@ -26,25 +27,45 @@ const Partenariat = () => {
     </GridContainer>
   );
 };
+const GridHeader = styled.h2`
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 0.8em;
+  text-align: start;
+  @media (max-width: 900px) {
+    font-size: 0.9em;
+  }
+  @media (max-width: 600px) {
+    font-size: 1em;
 
+    margin-bottom: 0.6em;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 0.8em;
+
+    margin-bottom: 0.6em;
+  }
+`;
 const GridContainer = styled.div`
   width: 50%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1em;
+  gap: 2em;
   padding: 2em;
 
   @media (max-width: 900px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   }
 
   @media (max-width: 600px) {
-    grid-template-columns: repeat(2, 1fr);
-    width: 50%;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   }
 
   @media (max-width: 400px) {
-    width: 40%;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    padding: 1em;
+    width: 90%;
   }
 `;
 

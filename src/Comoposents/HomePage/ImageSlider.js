@@ -46,7 +46,7 @@ const Sd = styled.div`
 
   @media (max-width: 600px) {
     width: 65%;
-    height: 65%;
+    height: 55%;
     display: flex;
     align-items: start;
     justify-content: start;
