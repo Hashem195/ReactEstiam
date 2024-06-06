@@ -1,31 +1,73 @@
 import React, { useState } from "react";
-import { FaArrowRight } from "react-icons/fa";
-import { FaArrowLeft } from "react-icons/fa";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import styled from "styled-components";
+import Text from "./Text";
 const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const slideStyle = {
-    backgroundImage: `url(${slides[currentIndex].url})`,
-    width: "100%",
-    height: "100%",
-    backgroundSize: "cover",
-    borderRadius: "10px",
-    backgroundPosition: "center",
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
   };
-  const sliderStyle = {
-    height: "100%",
-    position: "relative",
+
+  const prevSlide = () => {
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + slides.length) % slides.length
+    );
   };
+
+  const currentSlide = slides[currentIndex];
   return (
-    <div style={sliderStyle}>
+    <SliderStyle>
       <div>
-        <FaArrowRight />
+        <FaArrowLeft
+          onClick={prevSlide}
+          style={{ cursor: "pointer", marginRight: "0.5em" }}
+        />
       </div>
-      <div style={slideStyle}></div>
+
+      <Sd style={{ backgroundImage: `url(${currentSlide.url})` }}></Sd>
       <div>
-        <FaArrowLeft />
+        <FaArrowRight
+          onClick={nextSlide}
+          style={{ cursor: "pointer", marginLeft: "0.5em" }}
+        />
       </div>
-    </div>
+      <Text text={currentSlide.text} />
+    </SliderStyle>
   );
 };
 
+const Sd = styled.div`
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 10px;
+  background-position: center;
+
+  @media (max-width: 600px) {
+    width: 65%;
+    height: 65%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+`;
+const SliderStyle = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 1em;
+  }
+`;
 export default ImageSlider;
