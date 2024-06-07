@@ -1,15 +1,25 @@
 import React from "react";
 import styled from "styled-components";
 import Logo from "./Logo";
+import DonateButton from "./DonateButton";
 // Header and logo all ready to go for now
 // Need to add nav links and update the links
 // Need to check responsivity for the header after adding the new links
 const Header = () => {
+  const handleDonateClick = () => {
+    window.location.href = "/donate";
+  };
   return (
     <Container>
       <Logo />
       <Nav>
         <List>
+          <NavItem>
+            <DonateDiv>
+              <DonateButton onClick={handleDonateClick} />
+            </DonateDiv>
+          </NavItem>
+          <Divider>||</Divider>
           <NavItem>
             <StyledLink href="/">Home</StyledLink>
           </NavItem>
@@ -28,7 +38,7 @@ const Header = () => {
 };
 
 export default Header;
-
+const DonateDiv = styled.div``;
 const Container = styled.div`
   display: flex;
   align-items: center;

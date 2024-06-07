@@ -11,6 +11,12 @@ const Footer = () => {
       behavior: "smooth",
     });
   };
+  const scrollToFAQ = () => {
+    const faqSection = document.getElementById("faq-section");
+    if (faqSection) {
+      faqSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <Container>
       <ShapeDivider className="custom-shape-divider-top-1717455096">
@@ -47,7 +53,9 @@ const Footer = () => {
             <Underline />
           </SectionHeader>
           <SectionItem>
-            <li>FAQ</li>
+            <Linker onClick={scrollToFAQ} style={{ cursor: "pointer" }}>
+              FAQ
+            </Linker>
             <li>CGU</li>
             <li>Mentions légales</li>
           </SectionItem>

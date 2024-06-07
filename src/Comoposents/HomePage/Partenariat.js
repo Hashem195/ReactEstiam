@@ -8,6 +8,8 @@ const partners = [
   { url: "./partner4.jpg", link: "https://partner4.com" },
   { url: "./partner5.png", link: "https://partner5.com" },
   { url: "./partner6.png", link: "https://partner6.com" },
+  { url: "./partner5.png", link: "https://partner5.com" },
+  { url: "./partner6.png", link: "https://partner6.com" },
 ];
 
 const Partenariat = () => {
