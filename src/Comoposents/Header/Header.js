@@ -2,13 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import Logo from "./Logo";
 import DonateButton from "./DonateButton";
+import { Link } from "react-router-dom";
 // Header and logo all ready to go for now
 // Need to add nav links and update the links
 // Need to check responsivity for the header after adding the new links
 const Header = () => {
-  const handleDonateClick = () => {
-    window.location.href = "/donate";
-  };
   return (
     <Container>
       <Logo />
@@ -16,7 +14,9 @@ const Header = () => {
         <List>
           <NavItem>
             <DonateDiv>
-              <DonateButton onClick={handleDonateClick} />
+              <Link to="/donate">
+                <DonateButton />
+              </Link>
             </DonateDiv>
           </NavItem>
           <Divider>||</Divider>

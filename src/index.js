@@ -1,19 +1,26 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Header from "./Comoposents/Header/Header";
 import Home from "./Comoposents/HomePage/Home";
 import Footer from "./Comoposents/Footer/Footer";
+import Donate from "./Comoposents/Don/Donate";
 
 const Index = () => {
   return (
     <React.StrictMode>
-      <Header />
-      <Home />
-      <App />
-      <Footer />
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/donate" element={<Donate />} />
+        </Routes>
+        <Home />
+        <App />
+        <Footer />
+      </Router>
     </React.StrictMode>
   );
 };

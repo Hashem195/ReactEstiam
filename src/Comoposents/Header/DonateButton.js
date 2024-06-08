@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-const DonateButton = ({ onClick }) => {
-  return <Button onClick={onClick}>Un Don?</Button>;
+const DonateButton = () => {
+  return <Button>Un Don?</Button>;
 };
 const Button = styled.button`
   background-color: #6e6e6e;
