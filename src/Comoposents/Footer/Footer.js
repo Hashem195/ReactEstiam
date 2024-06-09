@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../Header/Logo";
 import Newsletter from "../Newsletter/Newsletter";
 import styled, { keyframes } from "styled-components";
+
 // the links are not done yet
 // only AUTRES ARE FINISHED
 const Footer = () => {
@@ -57,7 +58,7 @@ const Footer = () => {
               FAQ
             </Linker>
             <li>CGU</li>
-            <li>Mentions légales</li>
+            <li>Mention Legal</li>
           </SectionItem>
         </Section>
         <Section>

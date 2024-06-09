@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./index.css";
-import App from "./App";
+import MentionLegal from "./Comoposents/Footer/MentionLegal/MentionLegal";
 import reportWebVitals from "./reportWebVitals";
 import Header from "./Comoposents/Header/Header";
 import Home from "./Comoposents/HomePage/Home";
@@ -15,10 +15,11 @@ const Index = () => {
       <Router>
         <Header />
         <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<Home />} />
           <Route path="/donate" element={<Donate />} />
+          <Route path="/MentionLegal" element={<MentionLegal />} />
         </Routes>
-        <Home />
-        <App />
         <Footer />
       </Router>
     </React.StrictMode>

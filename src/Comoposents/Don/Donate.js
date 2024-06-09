@@ -1,7 +1,9 @@
 // Donate.js
 import React, { useState } from "react";
 import styled from "styled-components";
-
+import Service from "./Service";
+import { FaHeart } from "react-icons/fa";
+import MoreInfo from "./MoreInfo";
 const Donate = () => {
   const [donations, setDonations] = useState([]);
   const [name, setName] = useState("");
@@ -75,7 +77,16 @@ const Donate = () => {
         </Form>
       </ContainerForm>
       <DonationList>
-        <Title>Top 10 Donations</Title>
+        <Title>
+          Top Donations
+          <FaHeart
+            style={{
+              color: "red",
+              marginLeft: "10px",
+              fontSize: "20px",
+            }}
+          />
+        </Title>
         <List>
           {donations.length === 0 ? (
             <ListItem>No donations yet.</ListItem>
@@ -87,7 +98,9 @@ const Donate = () => {
             ))
           )}
         </List>
+        <Service />
       </DonationList>
+      <MoreInfo />
     </BigContainer>
   );
 };
@@ -200,6 +213,9 @@ const BigContainer = styled.div`
   @media (max-width: 600px) {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: auto;
   }
 `;
 

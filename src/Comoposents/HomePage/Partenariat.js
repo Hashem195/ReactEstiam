@@ -10,6 +10,7 @@ const partners = [
   { url: "./partner6.png", link: "https://partner6.com" },
   { url: "./partner5.png", link: "https://partner5.com" },
   { url: "./partner6.png", link: "https://partner6.com" },
+  { url: "./partner1.jpg", link: "https://partner1.com" },
 ];
 
 const Partenariat = () => {
@@ -33,6 +34,7 @@ const GridHeader = styled.h2`
   font-size: 1.5em;
   font-weight: 700;
   margin-bottom: 0.8em;
+  grid-column: 1 / -1;
   text-align: start;
   @media (max-width: 900px) {
     font-size: 0.9em;
