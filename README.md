@@ -20,7 +20,7 @@ To get started with the project, follow these steps:
 2. **Navigate to the Project Directory**
 
     ```sh
-    npm install
+    cd ./Example/ReactEstiam
 3. **Install Dependencies**
    ```sh
    npm install
