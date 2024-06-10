@@ -8,6 +8,9 @@ import Header from "./Comoposents/Header/Header";
 import Home from "./Comoposents/HomePage/Home";
 import Footer from "./Comoposents/Footer/Footer";
 import Donate from "./Comoposents/Don/Donate";
+import CGU from "./Comoposents/Footer/CGU";
+import About from "./Comoposents/About/About";
+import Nous from "./Comoposents/Footer/Nous";
 
 const Index = () => {
   return (
@@ -19,6 +22,9 @@ const Index = () => {
           <Route path="*" element={<Home />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/MentionLegal" element={<MentionLegal />} />
+          <Route path="/CGU" element={<CGU />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Qui-sommes-nous" element={<Nous />} />
         </Routes>
         <Footer />
       </Router>

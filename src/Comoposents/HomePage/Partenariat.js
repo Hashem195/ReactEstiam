@@ -33,7 +33,7 @@ const Partenariat = () => {
 const GridHeader = styled.h2`
   font-size: 1.5em;
   font-weight: 700;
-  margin-bottom: 0.8em;
+  margin: 1em;
   grid-column: 1 / -1;
   text-align: start;
   @media (max-width: 900px) {

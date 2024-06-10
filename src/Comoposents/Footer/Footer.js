@@ -41,7 +41,9 @@ const Footer = () => {
             <Underline />
           </SectionHeader>
           <SectionItem>
-            <li>Qui sommes-nous ?</li>
+            <li>
+              <Linker href="/Qui-sommes-nous">Qui sommes-nous ?</Linker>
+            </li>
             <li>Notre équipe</li>
             <Linker onClick={scrollToTop} style={{ cursor: "pointer" }}>
               Partenaires
@@ -57,8 +59,8 @@ const Footer = () => {
             <Linker onClick={scrollToFAQ} style={{ cursor: "pointer" }}>
               FAQ
             </Linker>
-            <li>CGU</li>
-            <li>Mention Legal</li>
+            <Linker href="/CGU">CGU</Linker>
+            <Linker href="/MentionLegal">Mention Legal</Linker>
           </SectionItem>
         </Section>
         <Section>
@@ -125,6 +127,8 @@ const Linker = styled.a`
 `;
 
 const SectionItem = styled.li`
+  display: flex;
+  flex-direction: column;
   font-size: 1em;
   font-weight: 400;
   margin-bottom: 0.5em;
