@@ -34,6 +34,7 @@ const GridHeader = styled.h2`
   font-size: 1.5em;
   font-weight: 700;
   margin: 1em;
+  color: WHITE;
   grid-column: 1 / -1;
   text-align: start;
   @media (max-width: 900px) {
@@ -82,9 +83,12 @@ const GridItem = styled.a`
   overflow: hidden;
   border-radius: 10px;
   transition: transform 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px white;
 
   &:hover {
+    box-shadow: 0 0 20px white;
+    transition: transform 0.3s ease;
+
     transform: scale(1.05);
   }
 `;

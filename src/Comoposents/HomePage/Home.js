@@ -24,7 +24,7 @@ const Bigdiv = styled.div`
   align-items: center;
   justify-content: space-evenly;
   height: 100vh;
-  background: #cccccc;
+  background: linear-gradient(to bottom, #6e6e6e, #000000, #ccc);
 `;
 
 export default Home;

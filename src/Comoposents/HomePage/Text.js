@@ -11,6 +11,7 @@ const Text = ({ text }) => {
 
 const TextContainer = styled.div`
   margin-top: 1em;
+  color: White;
   text-align: center;
   width: 50%;
   @media (max-width: 600px) {

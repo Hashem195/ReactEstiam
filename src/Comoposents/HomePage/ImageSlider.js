@@ -21,7 +21,7 @@ const ImageSlider = ({ slides }) => {
       <div>
         <FaArrowLeft
           onClick={prevSlide}
-          style={{ cursor: "pointer", marginRight: "0.5em" }}
+          style={{ cursor: "pointer", marginRight: "0.5em", color: "White" }}
         />
       </div>
 
@@ -29,7 +29,7 @@ const ImageSlider = ({ slides }) => {
       <div>
         <FaArrowRight
           onClick={nextSlide}
-          style={{ cursor: "pointer", marginLeft: "0.5em" }}
+          style={{ cursor: "pointer", marginLeft: "0.5em", color: "White" }}
         />
       </div>
       <Text text={currentSlide.text} />
@@ -43,7 +43,7 @@ const Sd = styled.div`
   background-size: cover;
   border-radius: 10px;
   background-position: center;
-
+  box-shadow: 0 0 10px white;
   @media (max-width: 600px) {
     width: 65%;
     height: 55%;
