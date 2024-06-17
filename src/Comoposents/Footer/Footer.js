@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../Header/Logo";
 import Newsletter from "../Newsletter/Newsletter";
 import styled, { keyframes } from "styled-components";
+import { Link } from "react-router-dom";
 
 // the links are not done yet
 // only AUTRES ARE FINISHED
@@ -44,8 +45,12 @@ const Footer = () => {
             <li>
               <Linker href="/Qui-sommes-nous">Qui sommes-nous ?</Linker>
             </li>
-            <li>Notre équipe</li>
-            <Linker onClick={scrollToTop} style={{ cursor: "pointer" }}>
+            <Linker href="/lequipe">Notre équipe</Linker>
+            <Linker
+              href="/"
+              onClick={scrollToTop}
+              style={{ cursor: "pointer" }}
+            >
               Partenaires
             </Linker>
           </SectionItem>
@@ -56,7 +61,11 @@ const Footer = () => {
             <Underline />
           </SectionHeader>
           <SectionItem>
-            <Linker onClick={scrollToFAQ} style={{ cursor: "pointer" }}>
+            <Linker
+              href="/faq"
+              onClick={scrollToFAQ}
+              style={{ cursor: "pointer" }}
+            >
               FAQ
             </Linker>
             <Linker href="/CGU">CGU</Linker>

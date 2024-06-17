@@ -39,9 +39,10 @@ const FAQSection = () => {
 };
 
 const Container = styled.div`
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-  padding: 2em 0;
+  padding: 2em;
+  background: #ccc;
 `;
 
 const Title = styled.h2`

@@ -11,6 +11,9 @@ import Donate from "./Comoposents/Don/Donate";
 import CGU from "./Comoposents/Footer/CGU";
 import About from "./Comoposents/About/About";
 import Nous from "./Comoposents/Footer/Nous";
+import NotreEquipe from "./Comoposents/Footer/NotreEquipe";
+import Partenariat from "./Comoposents/HomePage/Partenariat";
+import FAQSection from "./Comoposents/FAQSection/FAQSection";
 
 const Index = () => {
   return (
@@ -24,7 +27,9 @@ const Index = () => {
           <Route path="/MentionLegal" element={<MentionLegal />} />
           <Route path="/CGU" element={<CGU />} />
           <Route path="/About" element={<About />} />
+          <Route path="/lequipe" element={<NotreEquipe />} />
           <Route path="/Qui-sommes-nous" element={<Nous />} />
+          <Route path="/faq" element={<FAQSection />} />
         </Routes>
         <Footer />
       </Router>
