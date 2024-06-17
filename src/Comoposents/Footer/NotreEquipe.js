@@ -46,7 +46,7 @@ const TeamSlider = styled.div`
   width: 80%;
 
   @media (max-width: 768px) {
-    width: 100%;
+    width: 80%;
   }
 `;
 
@@ -68,6 +68,20 @@ const TeamCard = styled.div`
   &:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    margin: 20px;
+    min-height: 400px;
+    max-width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    }
   }
 `;
 
