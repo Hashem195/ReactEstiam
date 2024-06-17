@@ -42,9 +42,8 @@ const Footer = () => {
             <Underline />
           </SectionHeader>
           <SectionItem>
-            <li>
-              <Linker href="/Qui-sommes-nous">Qui sommes-nous ?</Linker>
-            </li>
+            <Linker href="/Qui-sommes-nous">Qui sommes-nous ?</Linker>
+
             <Linker href="/lequipe">Notre équipe</Linker>
             <Linker
               href="/"
@@ -78,7 +77,7 @@ const Footer = () => {
             <Underline />
           </SectionHeader>
           <SectionItem>
-            <li>Accueil</li>
+            <Linker href="/">Accueil</Linker>
             <li>Services</li>
             <li>Santé</li>
             <li>Garde a domicile</li>
@@ -90,14 +89,10 @@ const Footer = () => {
             <Underline />
           </SectionHeader>
           <SectionItem>
-            <li>
-              <Newsletter />
-            </li>
-            <li>
-              <Linker href="https://www.linkedin.com" target="_blank">
-                Linkedin
-              </Linker>
-            </li>
+            <Newsletter />
+            <Linker href="https://www.linkedin.com" target="_blank">
+              Linkedin
+            </Linker>
             <Linker href="https://twitter.com" target="_blank">
               Twitter
             </Linker>

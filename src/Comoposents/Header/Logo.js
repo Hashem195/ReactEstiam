@@ -5,7 +5,7 @@ const Logo = () => {
   return (
     <LogoContainer>
       <HomeLink href="/">
-        <img src="1_logo.png" alt="logo" />
+        <img src="/Photos/1_logo.png" alt="logo" />
       </HomeLink>
     </LogoContainer>
   );

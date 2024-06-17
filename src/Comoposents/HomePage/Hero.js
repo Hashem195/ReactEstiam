@@ -5,22 +5,22 @@ import Partenariat from "./Partenariat";
 const Hero = () => {
   const slides = [
     {
-      url: "./1.jpg",
+      url: "./Photos/1.jpg",
       title: "Slide 1",
       text: "Drawing a smile on the face of the Elderly person",
     },
     {
-      url: "./2.jpg",
+      url: "./Photos/2.jpg",
       title: "Slide 2",
       text: "A safe shellter  for the Elderly person",
     },
     {
-      url: "./3.jpg",
+      url: "./Photos/3.jpg",
       title: "Slide 3",
       text: "Helping eldery people with care",
     },
-    { url: "./4.jpeg", title: "Slide 4", text: "New Activites" },
-    { url: "./5.jpg", title: "Slide 5", text: "Sharing Love and Care" },
+    { url: "./Photos/4.jpeg", title: "Slide 4", text: "New Activites" },
+    { url: "./Photos/5.jpg", title: "Slide 5", text: "Sharing Love and Care" },
   ];
   return (
     <>

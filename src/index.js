@@ -12,7 +12,6 @@ import CGU from "./Comoposents/Footer/CGU";
 import About from "./Comoposents/About/About";
 import Nous from "./Comoposents/Footer/Nous";
 import NotreEquipe from "./Comoposents/Footer/NotreEquipe";
-import Partenariat from "./Comoposents/HomePage/Partenariat";
 import FAQSection from "./Comoposents/FAQSection/FAQSection";
 
 const Index = () => {

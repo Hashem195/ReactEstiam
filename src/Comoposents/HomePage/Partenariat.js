@@ -2,15 +2,15 @@ import React from "react";
 import styled from "styled-components";
 
 const partners = [
-  { url: "./partner1.jpg", link: "https://partner1.com" },
-  { url: "./partner2.jpg", link: "https://partner2.com" },
-  { url: "./partner3.png", link: "https://partner3.com" },
-  { url: "./partner4.jpg", link: "https://partner4.com" },
-  { url: "./partner5.png", link: "https://partner5.com" },
-  { url: "./partner6.png", link: "https://partner6.com" },
-  { url: "./partner5.png", link: "https://partner5.com" },
-  { url: "./partner6.png", link: "https://partner6.com" },
-  { url: "./partner1.jpg", link: "https://partner1.com" },
+  { url: "./Photos/partner1.jpg", link: "https://partner1.com" },
+  { url: "./Photos/partner2.jpg", link: "https://partner2.com" },
+  { url: "./Photos/partner3.png", link: "https://partner3.com" },
+  { url: "./Photos/partner4.jpg", link: "https://partner4.com" },
+  { url: "./Photos/partner5.png", link: "https://partner5.com" },
+  { url: "./Photos/partner6.png", link: "https://partner6.com" },
+  { url: "./Photos/partner5.png", link: "https://partner5.com" },
+  { url: "./Photos/partner6.png", link: "https://partner6.com" },
+  { url: "./Photos/partner1.jpg", link: "https://partner1.com" },
 ];
 
 const Partenariat = () => {

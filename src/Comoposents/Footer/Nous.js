@@ -15,7 +15,7 @@ const Nous = () => {
         </Content>
         <BlobContainer>
           <Blob>
-            <img src="1.jpg" alt="Our mission" />
+            <img src="/Photos/1.jpg" alt="Our mission" />
           </Blob>
         </BlobContainer>
       </Section>
