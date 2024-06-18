@@ -31,6 +31,10 @@ const Header = () => {
           <NavItem>
             <StyledLink href="/Contact">Contact</StyledLink>
           </NavItem>
+          <Divider>||</Divider>
+          <NavItem>
+            <StyledLink href="/Services">Services</StyledLink>
+          </NavItem>
         </List>
       </Nav>
     </Container>
@@ -61,6 +65,15 @@ const Container = styled.div`
 const Nav = styled.nav`
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 600px) {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 0.8em;
+
+    justify-content: center;
+  }
 `;
 
 const List = styled.ul`

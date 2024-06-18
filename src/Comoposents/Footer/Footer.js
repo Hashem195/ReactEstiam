@@ -77,9 +77,9 @@ const Footer = () => {
           </SectionHeader>
           <SectionItem>
             <Linker href="/">Accueil</Linker>
-            <li>Services</li>
+            <Linker href="/Services">Services</Linker>
             <li>Santé</li>
-            <li>Garde a domicile</li>
+            <li>Aide a domicile</li>
           </SectionItem>
         </Section>
         <Section>

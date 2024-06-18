@@ -13,6 +13,8 @@ import About from "./Comoposents/About/About";
 import Nous from "./Comoposents/Footer/Nous";
 import NotreEquipe from "./Comoposents/Footer/NotreEquipe";
 import FAQSection from "./Comoposents/FAQSection/FAQSection";
+import Contact from "./Comoposents/Contact/Contact";
+import Services from "./Comoposents/Services/Services";
 
 const Index = () => {
   return (
@@ -26,6 +28,8 @@ const Index = () => {
           <Route path="/MentionLegal" element={<MentionLegal />} />
           <Route path="/CGU" element={<CGU />} />
           <Route path="/About" element={<About />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Services" element={<Services />} />
           <Route path="/lequipe" element={<NotreEquipe />} />
           <Route path="/Qui-sommes-nous" element={<Nous />} />
           <Route path="/faq" element={<FAQSection />} />
