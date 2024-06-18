@@ -148,7 +148,7 @@ const Services = () => {
               src={"/Photos/EatHealthyImg.jpg"}
               alt="Programme Eat Healthy"
             />
-            <ServiceTitle>Programme Eat Healthy"</ServiceTitle>
+            <ServiceTitle>Programme Eat Healthy</ServiceTitle>
             <ServiceDescription>
               Programme pour aider à manger des aliments sains et nutritifs.
             </ServiceDescription>

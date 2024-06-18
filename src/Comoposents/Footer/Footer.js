@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../Header/Logo";
 import Newsletter from "../Newsletter/Newsletter";
 import styled, { keyframes } from "styled-components";
+import { Link } from "react-router-dom";
 
 // the links are not done yet
 // only AUTRES ARE FINISHED
@@ -78,8 +79,8 @@ const Footer = () => {
           <SectionItem>
             <Linker href="/">Accueil</Linker>
             <Linker href="/Services">Services</Linker>
-            <li>Santé</li>
-            <li>Aide a domicile</li>
+            <Linker href="/Sante">Santé</Linker>
+            <Linker href="/Aide-a-domicile">Aide a domicile</Linker>
           </SectionItem>
         </Section>
         <Section>
